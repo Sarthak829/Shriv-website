@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shrivify — AI Automation & Analytics for Growing Businesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #2E2A6E;
+    --navy-light: #3D3890;
+    --green: #4A7C59;
+    --cream: #FBFAF7;
+    --ink: #2A2A2A;
+    --muted: #6B6B6B;
+    --line: #E4E2DC;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    padding: 40px 0 20px;
+  }
+  header .wrap { display: flex; align-items: center; gap: 12px; }
+  .logo-mark {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: -0.5px;
+  }
+  .logo-tag {
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: -2px;
+  }
+
+  .hero {
+    padding: 64px 0 56px;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.12;
+    color: var(--navy);
+    max-width: 720px;
+    letter-spacing: -0.5px;
+  }
+  .hero .sub {
+    margin-top: 20px;
+    font-size: 19px;
+    color: var(--ink);
+    max-width: 560px;
+  }
+  .hero p.body {
+    margin-top: 16px;
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 560px;
+  }
+  .cta {
+    display: inline-block;
+    margin-top: 32px;
+    background: var(--navy);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px 28px;
+    border-radius: 4px;
+    transition: background 0.15s ease;
+  }
+  .cta:hover { background: var(--navy-light); }
+  .cta:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+
+  .feather-accent {
+    position: relative;
+  }
+  .feather-accent::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 3px;
+    background: var(--green);
+    margin-top: 28px;
+    border-radius: 2px;
+  }
+
+  .offerings {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .offerings h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--green);
+    margin-bottom: 32px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 40px;
+  }
+  .item h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .item p {
+    font-size: 15px;
+    color: var(--muted);
+  }
+
+  .why {
+    padding: 56px 0;
+  }
+  .why p {
+    font-size: 18px;
+    max-width: 640px;
+    color: var(--ink);
+  }
+  .why .cta { margin-top: 28px; }
+
+  footer {
+    padding: 32px 0 48px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 620px) {
+    .grid { grid-template-columns: 1fr; }
+    header { padding-top: 28px; }
+    .hero { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div>
+        <div class="logo-mark">Shrivify</div>
+        <div class="logo-tag">Grow With Us</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap feather-accent">
+      <h1>AI automation & analytics for growing businesses.</h1>
+      <p class="sub">We build AI-powered systems that save you time, capture every opportunity, and turn your data into decisions.</p>
+      <p class="body">From automating repetitive tasks to building intelligent chat systems and turning raw data into clear insights — we design AI solutions tailored to how your business actually works. No generic tools, no wasted effort.</p>
+      <a href="#book" class="cta">Book Your Free 45-Min Strategy Call</a>
+    </div>
+  </section>
+
+  <section class="offerings">
+    <div class="wrap">
+      <h2>What We Do</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Workflow Automation</h3>
+          <p>Cut the manual, repetitive work that eats your week.</p>
+        </div>
+        <div class="item">
+          <h3>Smart Chat & Lead Systems</h3>
+          <p>Never miss a customer inquiry again, day or night.</p>
+        </div>
+        <div class="item">
+          <h3>Data & Analytics</h3>
+          <p>Turn your business data into clear, usable decisions.</p>
+        </div>
+        <div class="item">
+          <h3>Custom AI Solutions</h3>
+          <p>Built around your specific business — not templated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="book">
+    <div class="wrap">
+      <p>We start by understanding your business — where time is lost, where decisions are hard to make, where opportunities slip through. Then we build the specific AI solution that fixes it. No unnecessary complexity, no long learning curve on your end.</p>
+      <!-- Replace # below with your Calendly link -->
+      <a href="#" class="cta">Let's Talk — Book a Free Call</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:8px;">
+      <span>Shrivify | Grow With Us</span>
+      <span>hello@shrivify.com</span>
+    </div>
+  </footer>
+
+</body>
+</html>
